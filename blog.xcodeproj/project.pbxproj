@@ -14,6 +14,7 @@
 		B3C0F8D21C525E4800421FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C0F8D01C525E4800421FBC /* LaunchScreen.storyboard */; };
 		B3C0F8DD1C525E4800421FBC /* blogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C0F8DC1C525E4800421FBC /* blogTests.swift */; };
 		B3C0F8E81C525E4800421FBC /* blogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C0F8E71C525E4800421FBC /* blogUITests.swift */; };
+		B3C0F8F61C52651B00421FBC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B3C0F8F51C52651B00421FBC /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B3C0F8E31C525E4800421FBC /* blogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C0F8E71C525E4800421FBC /* blogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogUITests.swift; sourceTree = "<group>"; };
 		B3C0F8E91C525E4800421FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C0F8F51C52651B00421FBC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		B3C0F8BB1C525E4800421FBC = {
 			isa = PBXGroup;
 			children = (
+				B3C0F8F51C52651B00421FBC /* .gitignore */,
 				B3C0F8C61C525E4800421FBC /* blog */,
 				B3C0F8DB1C525E4800421FBC /* blogTests */,
 				B3C0F8E61C525E4800421FBC /* blogUITests */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C0F8F61C52651B00421FBC /* .gitignore in Resources */,
 				B3C0F8D21C525E4800421FBC /* LaunchScreen.storyboard in Resources */,
 				B3C0F8CF1C525E4800421FBC /* Assets.xcassets in Resources */,
 				B3C0F8CD1C525E4800421FBC /* Main.storyboard in Resources */,
@@ -399,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = blog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.leo.blog;
@@ -410,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = blog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.leo.blog;
