@@ -26,13 +26,6 @@
                                     <rect key="frame" x="202" y="247" width="396" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNu-c8-IQu">
-                                <rect key="frame" x="387" y="339" width="85" height="45"/>
-                                <state key="normal" title="Sign in"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="513" y="391" width="85" height="45"/>
-                                </variation>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1xF-XK-ma6">
                                 <rect key="frame" x="127" y="258" width="345" height="30"/>
                                 <nil key="textColor"/>
@@ -42,9 +35,22 @@
                                     <rect key="frame" x="202" y="310" width="396" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNu-c8-IQu">
+                                <rect key="frame" x="387" y="339" width="85" height="45"/>
+                                <state key="normal" title="Sign in"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="513" y="391" width="85" height="45"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="UserName" destination="tdV-zD-PbF" id="Y1Z-7F-DvG"/>
+                        <outlet property="login" destination="ZNu-c8-IQu" id="Vjr-Za-r65"/>
+                        <outlet property="password" destination="1xF-XK-ma6" id="JzV-6b-pqc"/>
+                        <outlet property="username" destination="tdV-zD-PbF" id="fe1-Np-MIy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
