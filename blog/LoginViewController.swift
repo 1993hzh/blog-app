@@ -55,9 +55,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             do {
                 let jsonArray = try NSJSONSerialization.JSONObjectWithData(data!, options:[])
                 print("Array: \(jsonArray)")
+                //TODO
             }
             catch {
-                NSLog("Error: \(error)")
+                NSLog("Login failed with error: \(error)")
             }
         }).resume()
     }
