@@ -8,13 +8,17 @@
 
 import UIKit
 class Passage {
-    var id: Int
-    var authorId: Int
-    var authorName: String
-    var content:String
-    var title:String
-    var createTime: String
-    var viewCount: Int
+    var id: Int?
+    var authorId: Int?
+    var authorName: String?
+    var content:String?
+    var title:String?
+    var createTime: String?
+    var viewCount: Int?
+    
+    init() {
+        
+    }
     
     init(id:Int, authorId:Int, authorName:String, title:String, content:String, createTime:String, viewCount:Int) {
         self.id = id

@@ -10,7 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    let loginURL = NSURL(string: "http://192.168.133.1:9000/loginFromApp")
+    let loginURL = NSURL(string: Global.server + Global.loginURL)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +35,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func login(button: UIButton) {
-        let params:[String: String] = [
-            "name" : username.text!,
-            "password" : password.text!
-        ]
+//        let params:[String: String] = [
+//            "name" : username.text!,
+//            "password" : password.text!
+//        ]
+//        doLogin(params)
+        let refreshAlert = UIAlertController(title: "TODO", message: "Currently the login module is not enabled, will work on this later.", preferredStyle: UIAlertControllerStyle.Alert)
         
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
+            //TODO
+        }))
+        
+        presentViewController(refreshAlert, animated: true, completion: nil)
+    }
+    
+    func doLogin(params: [String: String]) {
         let session = NSURLSession.sharedSession()
         let request = NSMutableURLRequest(URL: loginURL!)
         request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
@@ -51,7 +61,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 NSLog(error!.localizedDescription)
                 return
             }
-
+            
             do {
                 let jsonArray = try NSJSONSerialization.JSONObjectWithData(data!, options:[])
                 print("Array: \(jsonArray)")
