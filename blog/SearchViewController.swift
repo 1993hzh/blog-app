@@ -69,8 +69,8 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         
         let page = getPage()
         let session = NSURLSession.sharedSession()
-        let url = NSURL(string: "\(passgeListURL)?page=\(page)&query=\(query!)")
-        NSLog("Requesting \(url)")
+        let urlStr = "\(passgeListURL)?page=\(page)&query=\(query!.encodeChinese())"
+        let url = NSURL(string: urlStr)
         
         session.dataTaskWithURL(url!, completionHandler: {data, response, error -> Void in
             if (error != nil) {

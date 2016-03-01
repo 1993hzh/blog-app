@@ -10,15 +10,19 @@ import Foundation
 
 class Global {
 
-    static let server = "https://www.huzhonghua.cn"
-//    static let server = "http://192.168.133.1:9000"
-    static let passageListURL = "/app/index"
-    static let loginURL = "/app/login"
+    static let server = "https://www.huzhonghua.cn/app"
+//    static let server = "http://192.168.133.1:9000/app"
+    static let passageListURL = "/index"
+    static let loginURL = "/login"
     static let passageURL = "/passage"
 }
 
 extension String {
     func trim() -> String {
         return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+    }
+    
+    func encodeChinese() -> String {
+        return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
     }
 }
